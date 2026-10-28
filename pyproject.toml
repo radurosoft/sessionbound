@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "radurosoft-sessionbound"
+version = "0.1.0"
+description = "把候选项映射到类别上，算出智能体的会话与任务边界的覆盖率并列出未覆盖的类别"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "radurosoft" }]
+keywords = ["analysis", "observability", "evaluation", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://radurosoft.github.io"
+Repository = "https://github.com/radurosoft/sessionbound"
+Issues = "https://github.com/radurosoft/sessionbound/issues"
+
+[project.scripts]
+sessionbound = "sessionbound:main"
+
+[tool.setuptools]
+py-modules = ["sessionbound"]
